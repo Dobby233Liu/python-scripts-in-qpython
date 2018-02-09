@@ -7,12 +7,12 @@ import random
 def truecode(cal1,cal2,cal3,cal4):
   return (cal3-cal1+8-random.randint(2,cal1))+(cal4+cal2-random.randint(1,cal2))
   
-calc_soultion=random.randint(1,999999)
+calc_soultion=random.randint(1,255)
 add_num=random.randint(1,255)
 notify_soultion=calc_soultion-add_num
-print("你猜得出1～999999范围的随机数吗？")
+print("你猜得出1～255范围的随机数吗？")
 print("每日数(tí)学(shì)题："+str(notify_soultion)+"+"+str(add_num)+"=?")
-print(notify_soultion+add_num)
+#print(calc_soultion)
 it=input("请输入...")
 #地狱模式代码
 if it=='':
@@ -21,9 +21,9 @@ if it=='':
  calc_soultion2=random.randint(8150,998889)
  add_num2=random.randint(1000,977999)
  notify_soultion2=(calc_soultion+55-85)-(add_num2+1)+truecode(random.randint(1,10),random.randint(1,10),random.randint(1,10),random.randint(1,10))
- print("你猜得出1～999999范围的随机数吗？")
+ print("你猜得出1～255范围的随机数吗？")
  print("每日数(tí)学(shì)题："+str(notify_soultion2-6-random.randint(9,28))+"+"+str(add_num2-8-1)+"=?")
- print(add_num+888-7+add_num2-6+notify_soultion+5-notify_soultion+15-1+add_num-8-random.randint(1,111))
+ #print(add_num+888-7+add_num2-6+notify_soultion+5-notify_soultion+15-1+add_num-8-random.randint(1,111))
  input("请输入...")
  print("U RE A IDIOT HAAAAAAAAAA")
  exit()
